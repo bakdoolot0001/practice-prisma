@@ -25,6 +25,7 @@ const createData = async (req: Request, res: Response) => {
         email,
       },
     });
+
     res.status(201).json({
       success: true,
       data: newData,
@@ -40,8 +41,9 @@ const createData = async (req: Request, res: Response) => {
 const deleteData = async (req: Request, res: Response) => {
   try {
     const { id } = req.params;
+    const userId = Number(id);
     const deleted = await prisma.user.delete({
-      where: { id: Number(id) },
+      where: { id: userId },
     });
     res.status(200).json({
       success: true,

@@ -5,8 +5,8 @@ import todoRouter from "../modules/crud/crud.routes";
 const globalRouter = Router();
 
 const corsConfig = {
-  origin: ["http://localhost:3000"],
-};
+  origin: ["http://localhost:3000", "https://bunch-to-backend-1.onrender.com/"]
+}
 
 globalRouter.use("/crud", cors(corsConfig), todoRouter);
 
