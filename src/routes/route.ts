@@ -5,7 +5,12 @@ import todoRouter from "../modules/crud/crud.routes";
 const globalRouter = Router();
 
 const corsConfig = {
-  origin: ["http://localhost:3000", "https://bunch-to-backend.vercel.app/"],
+  origin: [
+    "http://localhost:3000",
+    "https://bunch-to-backend.vercel.app/",
+    "https://bunch-to-backend-8uqh2b4p9-ergeshov-bakdoolots-projects.vercel.app/",
+    "",
+  ],
 };
 
 globalRouter.use("/crud", cors(corsConfig), todoRouter);
