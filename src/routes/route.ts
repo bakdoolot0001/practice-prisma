@@ -7,7 +7,7 @@ const globalRouter = Router();
 const corsConfig = {
   origin: [
     "http://localhost:3000",
-    "https://bunch-to-backend.vercel.app/",
+    "https://bunch-to-backend.vercel.app",
   ],
 };
 
