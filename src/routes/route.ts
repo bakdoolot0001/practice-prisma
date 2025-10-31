@@ -1,5 +1,5 @@
 import { Router } from "express";
-import todoRouter from "../modules/crud/crud.routes";
+import todoRouter from "../modules/course/course.routes";
 
 const globalRouter = Router();
 
